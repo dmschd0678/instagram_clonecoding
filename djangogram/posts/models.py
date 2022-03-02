@@ -27,13 +27,13 @@ class Comment(TimeStampedModel):
         user_model.User,
         null = True,
         on_delete=models.CASCADE,
-        related_name='content_author',
+        related_name='comment_author',
     )
     posts = models.ForeignKey(
         Post,
         null = True,
         on_delete=models.CASCADE,
-        related_name='coment_post'
+        related_name='comment_post'
     )
     
     contents = models.TextField(blank=True)
