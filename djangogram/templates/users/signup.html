@@ -1,5 +1,10 @@
+{% extends "users/base.html"%}
 <h1>Here is SignUp page</h1>
 
+{%block title%}
+sign up
+{%endblock title%}
+{% block content %}
 <form action="{%url 'users:signup'%}" method = 'post'>
     {% csrf_token %}
     
@@ -13,3 +18,4 @@
 </form>
 
 <a href="{%url 'users:main'%}">login</a>
+{% endblock content %}
