@@ -1,3 +1,14 @@
 body{
-    background-color: skyblue;
+    background-color : skyblue;
+}
+/* footer */
+
+footer{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    bottom : 0;
+    width :100%
 }
