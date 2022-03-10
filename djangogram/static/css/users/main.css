@@ -1,14 +1,57 @@
 body{
-    background-color : skyblue;
+    background-color : #fafafa;
+    display: flex;
+    flex-direction: column;
 }
+
+.content{
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* signup */
+.auth{
+
+}
+
+.auth form{
+
+}
+
+
 /* footer */
 
 footer{
+    width :100%;
     position: absolute;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     bottom : 0;
-    width :100%
+}
+footer .list{
+    margin : auto;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer ul li{
+    margin: 10px;
+}
+
+footer ul li a{
+    color : #00376b;
+    text-decoration: none;
+}
+
+footer .company{
+    margin:auto;
 }

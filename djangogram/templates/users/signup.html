@@ -5,17 +5,22 @@
 sign up
 {%endblock title%}
 {% block content %}
-<form action="{%url 'users:signup'%}" method = 'post'>
-    {% csrf_token %}
-    
-    {% for field in form %}
-    <div class = "fieldWrapper">
-        {{field.errors}}
-        {{field.label_tag}} {{field}}
-    </div>
-    {% endfor%}
-    <input type="submit" value = "sign up">
-</form>
+<div class = "auth">
 
-<a href="{%url 'users:main'%}">login</a>
+    <form action="{%url 'users:signup'%}" method = 'post'>
+        {% csrf_token %}
+        
+        {% for field in form %}
+        <div class = "fieldWrapper">
+            {{field.errors}}
+            {{field}}
+        </div>
+        {% endfor%}
+        <input type="submit" value = "sign up">
+    </form>
+</div>
+
+<div class = "auth_link">   
+    <a href="{%url 'users:main'%}">login</a>
+</div>
 {% endblock content %}
