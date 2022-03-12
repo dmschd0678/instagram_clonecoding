@@ -12,15 +12,42 @@ body{
     align-items: center;
 }
 
-/* signup */
+/* auth */
 .auth{
+    background-color: white;
+    width: 350px;
+    height: 300px;
+    border: 1px solid #efefef;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .auth form{
-
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
 }
 
+.auth form input{
+    margin-bottom: 10px;
+}
+
+.auth form input:last-child{
+    margin-top: 10px;
+}
+
+/* signup, Log in link */
+
+.auth_link{
+    margin-top: 50px;
+    width : 350px;
+    height: 50px;
+    text-align: center;
+    border : 1px solid #efefef;
+    background-color: white;
+}
 
 /* footer */
 
